@@ -2,7 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { LANDING_TEXT, type Language } from "@/components/landing/translations";
 import { ASSETS } from "@/lib/figma-assets";
-import { EMAIL_LABEL, EMAIL_MAILTO, PHONE_LABEL, PHONE_TEL, SITE_URL, WHATSAPP_URL } from "@/lib/links";
+import {
+  EMAIL_LABEL,
+  EMAIL_MAILTO,
+  INSTAGRAM_URL,
+  PHONE_LABEL,
+  PHONE_TEL,
+  SITE_URL,
+  WHATSAPP_URL,
+} from "@/lib/links";
 
 type SocialItem = {
   href: string;
@@ -25,7 +33,7 @@ const SOCIAL = [
     showScreen: true,
   },
   {
-    href: "https://www.instagram.com/neetrino_it_company/",
+    href: INSTAGRAM_URL,
     label: "Instagram",
     glow: ASSETS.socialInstagramA,
     icon: ASSETS.socialInstagramB,
