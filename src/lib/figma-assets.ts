@@ -3,7 +3,7 @@ export const ASSETS = {
   heroBackground: "https://www.figma.com/api/mcp/asset/6ca2e925-edce-498b-ae66-b0c7f7c3f18a",
   /** Horizontal wordmark; stored in `public/logo-mark.png`. */
   logo: "/logo-mark.png",
-  cardMockup: "https://www.figma.com/api/mcp/asset/498da19f-c2f4-4157-8d9e-29194455bfc9",
+  cardMockup: "/giftcard-header.webp",
   headerPhone: "https://www.figma.com/api/mcp/asset/62caa339-b3d7-4944-b6de-9f90dc812245",
   cloudBg: "https://www.figma.com/api/mcp/asset/24b74c5c-192d-4361-8ca1-6b8cf1a9d31a",
   cloudGlass: "https://www.figma.com/api/mcp/asset/9101549b-7416-4afc-a26c-2f7b902dc4ed",

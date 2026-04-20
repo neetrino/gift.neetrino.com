@@ -13,15 +13,15 @@ export function HeroVisual() {
         </div>
       </div>
       <div className="pointer-events-none absolute left-1/2 top-[-46px] flex h-[min(860.325px,156vw)] w-[min(875.027px,208vw)] -translate-x-[50%] items-center justify-center">
-        <div className="rotate-[32.79deg]">
-          <div className="relative h-[min(620.277px,102vw)] w-[min(646px,146vw)]" data-node-id="25:120">
+        <div className="rotate-[-2deg]">
+          <div className="relative h-[min(820px,134vw)] w-[min(855px,190vw)]" data-node-id="25:120">
             <Image
               alt="Neetrino gift card mockup"
               src={ASSETS.cardMockup}
               fill
-              className="object-cover"
+              className="object-contain"
               priority
-              sizes="(max-width:768px) 146vw, 646px"
+              sizes="(max-width:768px) 190vw, 855px"
               unoptimized
             />
           </div>
