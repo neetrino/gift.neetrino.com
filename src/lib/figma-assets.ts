@@ -1,8 +1,8 @@
 /** Remote assets from Figma MCP (refresh if URLs expire ~7 days). */
 export const ASSETS = {
   heroBackground: "https://www.figma.com/api/mcp/asset/6ca2e925-edce-498b-ae66-b0c7f7c3f18a",
-  /** Horizontal wordmark; stored in `public/logo-mark.png`. */
-  logo: "/logo-mark.png",
+  /** Horizontal wordmark; stored in `public/logo-mark.webp`. */
+  logo: "/logo-mark.webp",
   cardMockup: "/giftcard-header.webp",
   headerPhone: "https://www.figma.com/api/mcp/asset/62caa339-b3d7-4944-b6de-9f90dc812245",
   cloudBg: "https://www.figma.com/api/mcp/asset/24b74c5c-192d-4361-8ca1-6b8cf1a9d31a",
@@ -17,11 +17,11 @@ export const ASSETS = {
   checkOne: "https://www.figma.com/api/mcp/asset/c4cc5338-55dc-437a-b6d5-0ffc24e1c1b0",
   checkTwo: "https://www.figma.com/api/mcp/asset/62f9c53d-0946-40c8-b03c-7dd58d833d43",
   mobileAppIcon: "https://www.figma.com/api/mcp/asset/89f28dcf-3222-43e2-8e94-4103e337c4ae",
-  usageMobileAppIcon: "/usage-mobile-app-icon.png",
-  websiteUsageIcon: "/usage-website-icon.png",
-  usageCrmIcon: "/usage-crm-icon.png",
-  usageSaasIcon: "/usage-saas-icon.png",
-  usageAiIcon: "/usage-ai-icon.png",
+  usageMobileAppIcon: "/usage-mobile-app-icon.webp",
+  websiteUsageIcon: "/usage-website-icon.webp",
+  usageCrmIcon: "/usage-crm-icon.webp",
+  usageSaasIcon: "/usage-saas-icon.webp",
+  usageAiIcon: "/usage-ai-icon.webp",
   verticalLine: "https://www.figma.com/api/mcp/asset/9e6bec3f-c4fb-4ed0-8a55-b3e7559a2eee",
   decentralizeAccent1: "https://www.figma.com/api/mcp/asset/4ea46d7a-d1a0-4e04-a0b6-4b4fe37818ea",
   decentralizeAccent2: "https://www.figma.com/api/mcp/asset/7ed79cab-9006-4147-a0be-158316a6e381",

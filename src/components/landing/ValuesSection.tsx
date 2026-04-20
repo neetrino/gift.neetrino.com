@@ -33,7 +33,7 @@ export function ValuesSection({ language }: ValuesSectionProps) {
             {text.availableValues}
           </span>
           <span className="relative h-[31px] w-[35.059px] shrink-0">
-            <Image alt="" src={ASSETS.walletIcon} fill className="object-contain" unoptimized />
+            <Image alt="" src={ASSETS.walletIcon} fill className="object-contain" unoptimized  loading="eager" />
           </span>
         </div>
         <div className="flex flex-col gap-3">
@@ -59,7 +59,7 @@ function ValueRow({ label, highlight, check }: ValueRowProps) {
         {label}
       </span>
       <span className="relative size-5 shrink-0">
-        <Image alt="" src={check} fill className="object-contain" unoptimized />
+        <Image alt="" src={check} fill className="object-contain" unoptimized  loading="eager" />
       </span>
     </div>
   );

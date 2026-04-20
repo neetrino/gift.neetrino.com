@@ -56,13 +56,13 @@ function SocialIcon({ item }: { item: SocialItem }) {
           }}
         />
         <span className="relative block size-8 mix-blend-plus-lighter">
-          <Image alt="" src={item.glow} fill className="object-cover" unoptimized />
+          <Image alt="" src={item.glow} fill className="object-cover" unoptimized  loading="eager" />
         </span>
         <span className="absolute left-[7.6px] top-[7.6px] block size-8">
-          <Image alt="" src={item.icon} fill className="object-cover" unoptimized />
+          <Image alt="" src={item.icon} fill className="object-cover" unoptimized  loading="eager" />
         </span>
         <span className="absolute left-[12.6px] top-[40.6px] block h-[13px] w-[23px]">
-          <Image alt="" src={item.ellipse} fill className="object-cover" unoptimized />
+          <Image alt="" src={item.ellipse} fill className="object-cover" unoptimized  loading="eager" />
         </span>
         <span
           aria-hidden
@@ -72,7 +72,7 @@ function SocialIcon({ item }: { item: SocialItem }) {
       </span>
       {item.showScreen ? (
         <span className="pointer-events-none absolute left-2 top-2 size-[18px] mix-blend-screen">
-          <Image alt="" src={ASSETS.socialEllipseScreen} fill className="object-cover" unoptimized />
+          <Image alt="" src={ASSETS.socialEllipseScreen} fill className="object-cover" unoptimized  loading="eager" />
         </span>
       ) : null}
     </span>
@@ -109,13 +109,13 @@ function ContactLinks() {
     <div className="flex flex-wrap items-center justify-center gap-4 text-white min-[390px]:gap-6">
       <Link href={PHONE_TEL} className="flex items-center gap-1.5 font-manrope text-xs">
         <span className="relative size-[19px] shrink-0">
-          <Image alt="" src={ASSETS.phoneIcon} fill className="object-contain" unoptimized />
+          <Image alt="" src={ASSETS.phoneIcon} fill className="object-contain" unoptimized  loading="eager" />
         </span>
         {PHONE_LABEL}
       </Link>
       <Link href={EMAIL_MAILTO} className="flex items-center gap-1.5 font-manrope text-xs">
         <span className="relative h-[15px] w-[19px] shrink-0">
-          <Image alt="" src={ASSETS.emailIcon} fill className="object-contain" unoptimized />
+          <Image alt="" src={ASSETS.emailIcon} fill className="object-contain" unoptimized  loading="eager" />
         </span>
         {EMAIL_LABEL}
       </Link>
@@ -152,7 +152,7 @@ export function LandingFooter({ language }: LandingFooterProps) {
           height={37}
           className="aspect-[130/37] h-[37px] w-[130px] object-contain"
           unoptimized
-        />
+         loading="eager" />
       </div>
       <SocialLinks language={language} />
       <ContactLinks />

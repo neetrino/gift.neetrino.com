@@ -56,31 +56,31 @@ function UsageIcon({ type }: { type: (typeof USAGE_META)[number]["icon"] }) {
     case "planet":
       return (
         <span className="relative size-12 shrink-0">
-          <Image alt="" src={ASSETS.websiteUsageIcon} fill className="object-contain" sizes="48px" />
+          <Image alt="" src={ASSETS.websiteUsageIcon} fill className="object-contain" sizes="48px"  loading="eager" />
         </span>
       );
     case "mobile":
       return (
         <span className="relative h-[45px] w-[31.5px] shrink-0">
-          <Image alt="" src={ASSETS.usageMobileAppIcon} fill className="object-contain" sizes="32px" />
+          <Image alt="" src={ASSETS.usageMobileAppIcon} fill className="object-contain" sizes="32px"  loading="eager" />
         </span>
       );
     case "decentralize":
       return (
         <span className="relative size-12 shrink-0">
-          <Image alt="" src={ASSETS.usageCrmIcon} fill className="object-contain" sizes="48px" />
+          <Image alt="" src={ASSETS.usageCrmIcon} fill className="object-contain" sizes="48px"  loading="eager" />
         </span>
       );
     case "cloud":
       return (
         <span className="relative size-12 shrink-0">
-          <Image alt="" src={ASSETS.usageSaasIcon} fill className="object-contain" sizes="48px" />
+          <Image alt="" src={ASSETS.usageSaasIcon} fill className="object-contain" sizes="48px"  loading="eager" />
         </span>
       );
     case "ai":
       return (
         <span className="relative size-12 shrink-0">
-          <Image alt="" src={ASSETS.usageAiIcon} fill className="object-contain" sizes="48px" />
+          <Image alt="" src={ASSETS.usageAiIcon} fill className="object-contain" sizes="48px"  loading="eager" />
         </span>
       );
     default: {

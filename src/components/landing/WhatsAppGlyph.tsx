@@ -15,7 +15,7 @@ export function WhatsAppGlyph({ className }: WhatsAppGlyphProps) {
         maskPosition: "center",
       }}
     >
-      <Image alt="" src={ASSETS.whatsappIcon} width={24} height={24} className="size-full" unoptimized />
+      <Image alt="" src={ASSETS.whatsappIcon} width={24} height={24} className="size-full" unoptimized  loading="eager" />
     </span>
   );
 }

@@ -26,7 +26,7 @@ export function StepsSection({ language }: StepsSectionProps) {
           aria-hidden
         >
           <div className="relative h-full w-full">
-            <Image alt="" src={ASSETS.verticalLine} fill className="object-cover" unoptimized />
+            <Image alt="" src={ASSETS.verticalLine} fill className="object-cover" unoptimized  loading="eager" />
           </div>
         </div>
         {text.items.map((step) => (

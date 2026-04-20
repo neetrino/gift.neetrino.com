@@ -19,7 +19,7 @@ function HeroHeading({ language }: HeroSectionProps) {
           {text.heading}
         </h1>
         <Image
-          src="/received-gift-card.png"
+          src="/received-gift-card.webp"
           alt={text.imageAlt}
           width={734}
           height={148}
@@ -70,7 +70,7 @@ function HeroActions({ language }: HeroSectionProps) {
           data-node-id="3:741"
         >
           <span className="relative block size-2.5 shrink-0">
-            <Image alt="" src={ASSETS.clockIcon} fill className="object-contain" unoptimized />
+            <Image alt="" src={ASSETS.clockIcon} fill className="object-contain" unoptimized  loading="eager" />
           </span>
           <p className="font-manrope text-xs font-medium leading-4 text-black">
             {text.validityNote}

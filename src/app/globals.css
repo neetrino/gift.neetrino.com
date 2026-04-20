@@ -40,7 +40,7 @@ body {
       rgba(5, 6, 27, 0.62) 65%,
       #05061b 85%
     ),
-    url("/hero-floor-bg.png");
+    url("/hero-floor-bg.webp");
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center top;
   background-size: cover, cover;

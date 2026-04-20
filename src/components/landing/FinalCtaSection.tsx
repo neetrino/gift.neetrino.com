@@ -36,7 +36,7 @@ export function FinalCtaSection({ language }: FinalCtaSectionProps) {
         >
           <span className="pointer-events-none absolute inset-[151px_453.5px_-151px_-453.5px]">
             <span className="absolute inset-[-8.93%_-7.27%_-80.36%_-7.27%]">
-              <Image alt="" src={ASSETS.linkShadow} fill className="object-cover" unoptimized />
+              <Image alt="" src={ASSETS.linkShadow} fill className="object-cover" unoptimized  loading="eager" />
             </span>
           </span>
           <WhatsAppGlyph />

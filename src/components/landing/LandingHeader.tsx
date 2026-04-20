@@ -35,7 +35,7 @@ export function LandingHeader({ language }: LandingHeaderProps) {
         </div>
         <div className="mt-3 flex items-center">
           <Link href={PHONE_TEL} className="relative block h-[57px] w-[56px] shrink-0" aria-label={text.callAria}>
-            <Image alt="" src={ASSETS.headerPhone} fill className="object-cover" unoptimized />
+            <Image alt="" src={ASSETS.headerPhone} fill className="object-cover" unoptimized  loading="eager" />
           </Link>
         </div>
       </div>
