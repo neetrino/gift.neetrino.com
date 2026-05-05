@@ -35,7 +35,14 @@ export function LandingHeader({ language }: LandingHeaderProps) {
         </div>
         <div className="mt-3 flex items-center">
           <Link href={PHONE_TEL} className="relative block h-[57px] w-[56px] shrink-0" aria-label={text.callAria}>
-            <Image alt="" src={ASSETS.headerPhone} fill className="object-cover" unoptimized  loading="eager" />
+            <span className="absolute inset-0">
+              <Image alt="" src={ASSETS.phoneEllipse} fill className="object-cover" unoptimized loading="eager" />
+            </span>
+            <span className="pointer-events-none absolute inset-0 flex items-center justify-center">
+              <span className="relative size-7 min-[390px]:size-8">
+                <Image alt="" src={ASSETS.phoneIcon} fill className="object-contain" unoptimized loading="eager" />
+              </span>
+            </span>
           </Link>
         </div>
       </div>

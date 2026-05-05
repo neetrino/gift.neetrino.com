@@ -15,66 +15,47 @@ import {
 type SocialItem = {
   href: string;
   label: string;
-  glow: string;
   icon: string;
   ellipse: string;
-  insetGlow: string;
-  showScreen: boolean;
+  /** Inset colored glow only; outer drop shadow is shared. */
+  insetShadow: string;
 };
 
 const SOCIAL = [
   {
     href: WHATSAPP_URL,
     label: "WhatsApp",
-    glow: ASSETS.socialWhatsappA,
     icon: ASSETS.socialWhatsappB,
     ellipse: ASSETS.socialEllipse,
-    insetGlow: "inset_0px_0px_8px_0px_rgba(13,252,37,0.32)",
-    showScreen: true,
+    insetShadow: "inset 0 0 8px 0 rgba(13, 252, 37, 0.32)",
   },
   {
     href: INSTAGRAM_URL,
     label: "Instagram",
-    glow: ASSETS.socialInstagramA,
     icon: ASSETS.socialInstagramB,
     ellipse: ASSETS.socialEllipsePink,
-    insetGlow: "inset_0px_0px_8px_0px_rgba(190,13,252,0.32)",
-    showScreen: false,
+    insetShadow: "inset 0 0 8px 0 rgba(190, 13, 252, 0.32)",
   },
 ] as const satisfies readonly SocialItem[];
 
 function SocialIcon({ item }: { item: SocialItem }) {
   return (
     <span className="relative flex h-12 w-12 items-center justify-center">
-      <span className="relative h-12 w-12 overflow-hidden rounded-xl border-[0.8px] border-[rgba(216,216,216,0.05)] p-2 shadow-[8px_4px_16px_0px_rgba(0,0,0,0.08)]">
-        <span
-          aria-hidden
-          className="pointer-events-none absolute inset-0 rounded-[12px] backdrop-blur-[10px]"
-          style={{
-            backgroundImage:
-              "linear-gradient(135deg, rgba(248, 251, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)",
-          }}
-        />
-        <span className="relative block size-8 mix-blend-plus-lighter">
-          <Image alt="" src={item.glow} fill className="object-cover" unoptimized  loading="eager" />
+      <span
+        className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-[12px] border-[0.8px] border-[rgba(216,216,216,0.05)] p-2 backdrop-blur-[10px]"
+        style={{
+          backgroundImage:
+            "linear-gradient(135deg, rgba(248, 251, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)",
+          boxShadow: `${item.insetShadow}, 8px 4px 16px 0 rgba(0, 0, 0, 0.08)`,
+        }}
+      >
+        <span className="pointer-events-none absolute left-[12.6px] top-[40.6px] z-0 block h-[13px] w-[23px]">
+          <Image alt="" src={item.ellipse} fill className="object-cover" unoptimized loading="eager" />
         </span>
-        <span className="absolute left-[7.6px] top-[7.6px] block size-8">
-          <Image alt="" src={item.icon} fill className="object-cover" unoptimized  loading="eager" />
+        <span className="relative z-[1] block size-8 shrink-0">
+          <Image alt="" src={item.icon} fill className="object-contain" unoptimized loading="eager" />
         </span>
-        <span className="absolute left-[12.6px] top-[40.6px] block h-[13px] w-[23px]">
-          <Image alt="" src={item.ellipse} fill className="object-cover" unoptimized  loading="eager" />
-        </span>
-        <span
-          aria-hidden
-          className="pointer-events-none absolute inset-[-0.4px] rounded-[inherit]"
-          style={{ boxShadow: item.insetGlow }}
-        />
       </span>
-      {item.showScreen ? (
-        <span className="pointer-events-none absolute left-2 top-2 size-[18px] mix-blend-screen">
-          <Image alt="" src={ASSETS.socialEllipseScreen} fill className="object-cover" unoptimized  loading="eager" />
-        </span>
-      ) : null}
     </span>
   );
 }

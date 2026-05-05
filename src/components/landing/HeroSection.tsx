@@ -69,8 +69,8 @@ function HeroActions({ language }: HeroSectionProps) {
           className="flex items-center gap-2 rounded-full border border-[rgba(70,70,81,0.1)] bg-[#ff8c00] px-[17px] py-[9px]"
           data-node-id="3:741"
         >
-          <span className="relative block size-2.5 shrink-0">
-            <Image alt="" src={ASSETS.clockIcon} fill className="object-contain" unoptimized  loading="eager" />
+          <span className="relative block h-[22px] w-[25px] shrink-0">
+            <Image alt="" src={ASSETS.clockIcon} fill className="object-contain" unoptimized loading="eager" />
           </span>
           <p className="font-manrope text-xs font-medium leading-4 text-black">
             {text.validityNote}
